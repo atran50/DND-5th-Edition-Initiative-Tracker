@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: MedeivalSharp;
+    
+}
+
+@font-face {
+    font-family: MedeivalSharp;
+    src: url(MedievalSharp-Regular.ttf);
+}
+
+.body{
+    background-color: whitesmoke
+}
+
+.top-banner{
+    background-color: navy;
+    color: sandybrown
+}
+
+.header{
+    text-align: center;
+    display: block;
+    white-space: nowrap;
+    background-color: sandybrown;
+    color: #333;
+}
+
+.tracker-container{
+    margin: 30px 200px;
+    text-align: center;
+    white-space: nowrap;
+    
+}
+
+.list{
+    border: solid 2px black;
+
+}
+
+.list li{
+    display: inline;
+    padding: 135px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.input-boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.input-boxes input{
+    margin: 0 70px;
+    padding: 0 15px;
+
+}
+
