@@ -1,8 +1,18 @@
 
 const bannerColor = document.getElementById(top-banner);
 
+var light = true;
 
 function changeColor()
 {
-    bannerColor.style.color = "red";
+    if(light)
+    {
+        bannerColor.style.backgroundColor = "red";
+        light = false;
+    }
+    else
+    {
+        bannerColor.style.backgroundColor = "navy";
+        light = true;
+    }
 }
