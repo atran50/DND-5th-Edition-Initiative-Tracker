@@ -1,5 +1,5 @@
 
-const bannerColor = document.getElementById(top-banner);
+const bannerColor = document.getElementById("top-banner");
 
 var light = true;
 
