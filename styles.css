@@ -16,8 +16,14 @@
 
 #top-banner{
     background-color: navy;
-    color: sandybrown
+    color: sandybrown;
+    display: flex;
 }
+
+#color-swap{
+    padding: 0 1%;
+}
+
 
 .header{
     text-align: center;
