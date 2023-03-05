@@ -10,7 +10,7 @@
 </head>
 <body>
     <ul id="top-banner">
-        <li style="margin-left:10px;padding-right: 2%;">Alvin's DND Tools</li>
+        <li id = "intro">Alvin's DND Tools</li>
         <button id="color-swap" onclick="changeColor()"> Switch Color Theme </button>
     </ul>
 
@@ -30,20 +30,20 @@
             </thead>
             <tbody>
                 <tr id = "add-new">
-                    <td class = "iniative">
-                        <input type="number" />
+                    <td class = "initiative">
+                        <input type="number" id="initInput" />
                     </td>
                     <td class = "name">
-                        <input type="text" />
+                        <input type="text" id="nameInput"/>
                     </td>
                     <td class = "hp">
-                        <input type="number" />
+                        <input type="number" id="hpInput"/>
                     </td>
                     <td class = "notes">
-                        <input type="text" />
+                        <input type="text" id="notesInput"/>
                     </td>
                     <td class = "add">
-                        <button id="add-button">Add</button>
+                        <button id="add-button" onclick="getInput()">Add</button>
                     </td>
                 </tr>
             </tbody>
