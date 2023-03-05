@@ -9,32 +9,46 @@
     <link rel="icon" href="d20.png">
 </head>
 <body>
-    <div id="top-banner">
-        <h3 style="margin-left:10px;padding-right: 2%;">Alvin's DND Tools</h3>
+    <ul id="top-banner">
+        <li style="margin-left:10px;padding-right: 2%;">Alvin's DND Tools</li>
         <button id="color-swap" onclick="changeColor()"> Switch Color Theme </button>
-    </div>
-    <div class="header-container">
-        <h1 class="header">DND Initiative Tracker</h1>
-    </div>
-    <div class="tracker-container">
-        <ul class="list">
-            <li>Initiative</li>
-            <li>Name</li>
-            <li>Hp</li>
-            <li>Notes</li>
-        </ul>
-        <div class="initative-order-container">
+    </ul>
 
-        </div>
-        <div class="input-boxes">
-            <input type="text" class="initiative-input" >
-            <input type="text" class="name-input">
-            <input type="text" class="hp-input">
-            <input type="text" class="notes-input">
-            <button onclick="">Add</button>
-        </div>
+    <h1 class="header">DND Initiative Tracker</h1>
+
+    <div class="tracker-container">
+        <table id = table-list cellspacing="0">
+            <thead>
+                <tr id = table-header >
+                    <th>Initiative</th>
+                    <th>Name</th>
+                    <th>HP</th>
+                    <th>Notes</th>
+                    <th>&nbsp;<th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr id = "add-new">
+                    <td class = "iniative">
+                        <input type="number" />
+                    </td>
+                    <td class = "name">
+                        <input type="text" />
+                    </td>
+                    <td class = "hp">
+                        <input type="number" />
+                    </td>
+                    <td class = "notes">
+                        <input type="text" />
+                    </td>
+                    <td class = "add">
+                        <button id="add-button">Add</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <script src="index.js"></script>
-
 </body>
 </html>

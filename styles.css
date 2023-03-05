@@ -1,8 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
     font-family: MedeivalSharp;
-    
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -11,21 +9,23 @@
 }
 
 .body{
-    background-color: whitesmoke
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
 }
 
 #top-banner{
+    padding: 0;
+    margin: 0;
     background-color: navy;
     color: sandybrown;
     display: flex;
+    list-style: none;
 }
-
-#color-swap{
-    padding: 0 1%;
-}
-
 
 .header{
+    padding: 0;
+    margin: 0;
     text-align: center;
     display: block;
     white-space: nowrap;
@@ -34,34 +34,36 @@
 }
 
 .tracker-container{
-    margin: 30px 200px;
+    padding: 1em;
+}
+
+#table-list
+{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+#table-list td
+{
+    padding: 1em;
+    text-align: left;
+    border-top: 1px solid #ccc;
+}
+
+#table-header th
+{
+    padding: 0.5 em;
+}
+
+#add-new
+{
+    width: 100%;
     text-align: center;
-    white-space: nowrap;
-    
 }
 
-.list{
-    border: solid 2px black;
-
-}
-
-.list li{
-    display: inline;
-    padding: 135px;
-    font-size: large;
-    font-weight: bold;
-}
-
-.input-boxes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.input-boxes input{
-    margin: 0 70px;
-    padding: 0 15px;
-
+input
+{
+    padding: 0.5em
 }
 
