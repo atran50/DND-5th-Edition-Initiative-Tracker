@@ -8,7 +8,7 @@
     src: url(MedievalSharp-Regular.ttf);
 }
 
-.body{
+body{
     background-color: whitesmoke;
     margin: 0;
     padding: 0;
@@ -21,6 +21,12 @@
     color: sandybrown;
     display: flex;
     list-style: none;
+}
+
+#intro
+{
+    margin-left:10px;
+    padding: .5em;
 }
 
 .header{
