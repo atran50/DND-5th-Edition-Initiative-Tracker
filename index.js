@@ -65,7 +65,7 @@ function getInput()
 
     var removeButton = '<button id="remove-button" onclick="remove(this)">Remove</button>'
    
-    var stringHeader = "<tr class=table-row initiative=" + initVal + ">";
+    var stringHeader = '<tr class="table-row" initiative=' + initVal + ">";
     var initData = "<td>" + init + "</td>";
     var nameData = "<td>" + name + "</td>";
     var hpData  = "<td>" + hp + "</td>";
@@ -83,9 +83,29 @@ function getInput()
     return string;
  }
 
+
+
  function appendHtml(newRow)
  {
+    
     document.getElementById("table-body").innerHTML += newRow;
+ }
+
+ function sortHtml()
+ {
+    var rows = document.getElementsByClassName("table-row");
+
+    var newElem = rows[rows.length - 1];
+
+    var newElemInit = newElem.getAttribute("initiative");
+    console.log(newElem);
+    console.log(newElemInit);
+
+    if(rows.length === 2)
+    {
+        newElem.remove();
+        rows[0].insertAdjacentElement("beforebegin", newElem);
+    }
  }
 
 function remove(elem)
@@ -99,4 +119,5 @@ function remove(elem)
     newRow = buildRow(initVal, nameVal, hpVal, notesVal);
     console.log(newRow);
     appendHtml(newRow);
+    sortHtml();
  }
