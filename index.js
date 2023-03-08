@@ -63,7 +63,7 @@ function getInput()
  {
     var string;
 
-    var removeButton = '<button id="remove-button" onclick="remove()">Remove</button>'
+    var removeButton = '<button id="remove-button" onclick="remove(this)">Remove</button>'
    
     var stringHeader = "<tr class=table-row initiative=" + initVal + ">";
     var initData = "<td>" + init + "</td>";
@@ -87,6 +87,11 @@ function getInput()
  {
     document.getElementById("table-body").innerHTML += newRow;
  }
+
+function remove(elem)
+{
+    elem.parentNode.parentNode.remove();
+}
 
  function main()
  {
