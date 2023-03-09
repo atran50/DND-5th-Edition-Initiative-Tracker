@@ -39,6 +39,10 @@ body{
     color: #333;
 }
 
+p{
+    text-align: center;
+}
+
 .tracker-container{
     padding: 1em;
 }
