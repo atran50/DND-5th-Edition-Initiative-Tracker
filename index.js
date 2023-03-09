@@ -1,6 +1,7 @@
 const bannerColor = document.getElementById("top-banner");
 const body = document.getElementById("body");
 const table = document.getElementById("table-list");
+const rollResult = document.getElementById("roll-result");
 
 
 let initVal = 0
@@ -9,6 +10,16 @@ let hpVal = 0
 let notesVal = "";
 let newRow = "";
 var light = true;
+
+function rollD20()
+{
+    return Math.floor(Math.random() * 20) + 1;
+}
+
+function setD20()
+{
+    rollResult.innerHTML = rollD20();
+}
 
 function changeColor()
 {
