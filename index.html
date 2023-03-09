@@ -14,8 +14,11 @@
         <button id="color-swap" onclick="changeColor()"> Switch Color Theme </button>
     </ul>
 
-    <h1 class="header">DND Initiative Tracker</h1>
-
+    <h1 class="header">DND 5E Initiative Tracker</h1>
+    <p>Welcome to my initiative tracker! <br>
+        Please enter your desired input and press add. <br>
+        The table will automatically sort from highest to lowest initaitve.<br>
+        You can also edit the fields for HP, Notes, and Name. Enjoy!</p>
     <div class="tracker-container">
         <table id = table-list cellspacing="0">
             <thead>
@@ -26,9 +29,6 @@
                     <th>Notes</th>
                     <th>&nbsp;<th>
                 </tr>
-
-            </thead>
-            <tbody id="table-body">
                 <tr id = "add-new">
                     <td class = "initiative">
                         <input type="number" id="initInput" />
@@ -46,6 +46,8 @@
                         <button id="add-button" onclick="main()">Add</button>
                     </td>
                 </tr>
+            </thead>
+            <tbody id="table-body">
             </tbody>
         </table>
     </div>
