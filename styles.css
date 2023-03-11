@@ -39,6 +39,13 @@ body{
     color: #333;
 }
 
+#toggle-info
+{
+    text-align: center;
+    color: blue;
+    cursor: pointer;
+}
+
 p{
     text-align: center;
 }
